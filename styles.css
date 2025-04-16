@@ -1,0 +1,107 @@
+/* I grabbed this from Google Fonts because I thought it looked nicer */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --primary-color: #2d5c47;
+  --hover: #1a3d2b;
+  --header-bg: #e0ebe4;
+  --bg: #d8e0da;
+}
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  background-color: #edf4f0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--header-bg);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.main-header h1 {
+  font-size: 32px;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 19px;
+  color: #333;
+  margin-top: 10px;
+}
+
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px 40px;
+  background-color: var(--bg);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 19px;
+  color: var(--primary-color);
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.project-overview {
+  max-width: 70%;
+  margin: 50px auto;
+  padding: 0 25px;
+  line-height: 1.5;
+  font-size: 17px;
+  color: #2c2c2c;
+  background-color: #f9fbfa;
+  border: 2px solid #d8e0da;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.project-overview h2 {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.project-overview p {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.custom-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.custom-link:hover {
+  color: var(--hover);
+}

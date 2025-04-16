@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Visualization Tools Project</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Connecticut Real Estate Visualization</h1>
+      <p class="subtitle">
+        An interactive exploration of housing trends across Connecticut
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Project Overview</a></li>
+          <li><a href="market-changes.html"> Market Changes Over Time</a></li>
+          <li><a href="property-type.html">Property Type Insights</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="project-overview">
+        <h2>Project Overview</h2>
+        <p>
+          The goal of this project was to analyze real estate data from the
+          state of Connecticut to try to understand how the market has changed
+          over time and how different property types have performed. The dataset
+          includes information on property sales, including sale prices,
+          property types, and locations, allowing me to create multiple
+          different interesting visualizations. The data was obtained from the
+          State of Connecticut, through Data.Gov and can be found
+          <a
+            class="custom-link"
+            href="https://catalog.data.gov/dataset/real-estate-sales-2001-2018"
+            >here</a
+          >
+        </p>
+        <p>
+          The project is divided into two main sections: Market Changes Over
+          Time and Property Type Insights. The market changes over time page
+          explores how the real estate market in Connecticut has evolved over
+          the years. Different features of the dataset are visualized to show
+          trends in sale prices over time, the number of sales in different
+          towns/zip-codes within Connecticut, how the market has reacted to
+          inflation or deflation. To represent the changes in inflation and
+          deflation, I was able to use the Consumer Price Index for All Urban
+          Consumers (CPI-U) data from the U.S. Bureau of Labor Statistics (via
+          FRED - the Federal Reserve Economic Data provided by the St. Louis FED
+          branch) to show how inflation and deflation change year to year, and
+          if those changes are visible in the real estate market. That data can
+          be found
+          <a
+            class="custom-link"
+            href="https://www1.ctdol.state.ct.us/lmi/cpi.asp"
+            >here</a
+          >
+        </p>
+        <p>
+          It’s important to note that all of the CPI-U data across my project
+          shows the change in CPI-U year-over-year. This means that if the CPI-U
+          was 1.5% in 2020 and 2.5% in 2021, the change in CPI-U would be 1.0%
+          (2.5% - 1.5%). This approach was used to help highlight how the rate
+          of inflation was changing from one year to the next, rather than just
+          showing the total level of inflation. While not every visualization in
+          the project is focused on percent change, several of them are —
+          especially those that explore how prices or economic conditions
+          shifted annually. Because of that, I wanted to keep the format
+          consistent and make it easier to directly compare changes over time.
+          It’s also important to understand that the CPI-U line in the
+          visualizations <i>does not show the actual CPI-U value</i>, but
+          instead <i>shows the change in CPI-U from the previous year</i>. If
+          the CPI-U line appears negative, it means that the inflation rate
+          decreased compared to the year before — not necessarily that prices
+          dropped overall, but that the increase in prices slowed down. However,
+          if the CPI-U line drops below the x-axis, that indicates a negative
+          change in inflation (meaning actual deflation occurred during that
+          year).
+        </p>
+        <p>
+          The Property Type Insights section focuses on how different categories
+          of real estate (such as single family homes, general residential real
+          estate, etc.) have performed over time across Connecticut. This part
+          of the project uses visualizations to break down the number of
+          property sales by category, as well as to explore the distribution of
+          sale prices within each category. These visualizations help reveal
+          which types of properties are the most commonly sold and how their
+          values vary, giving potential buyers, sellers, and investors a better
+          understanding of the market for each category. In particular, the bar
+          chart shows which property types are the most active in the market
+          over time, while the box-and-whisker plot illustrates the spread of
+          sale prices, including medians and outliers. This section helps
+          highlight how different types of real estate contribute to the overall
+          housing market and which ones tend to have more consistent or more
+          variable pricing.
+        </p>
+
+        <p>
+          Please explore the visualizations and look out for the key takeaways
+          from each of them as we explore the different factors and points of
+          interest of Connecticut real estate. All of the visualizations
+          throughout the project are interactive, so feel free to hover over
+          different points to see more information about them.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
