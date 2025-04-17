@@ -5,6 +5,7 @@
     <title>Visualization Tools Project</title>
   </head>
   <body>
+    <h2 id="name">Ryan Malone</h2>
     <header class="main-header">
       <h1>Connecticut Real Estate Visualization</h1>
       <p class="subtitle">
@@ -31,9 +32,16 @@
           State of Connecticut, through Data.Gov and can be found
           <a
             class="custom-link"
+            target="_blank"
             href="https://catalog.data.gov/dataset/real-estate-sales-2001-2018"
             >here</a
-          >
+          >. The zip code data used for the Connecticut map was obtained from
+          <a
+            class="custom-link"
+            target="_blank"
+            href="https://www.unitedstateszipcodes.org/zip-code-database/"
+            >this source</a
+          >.
         </p>
         <p>
           The project is divided into two main sections: Market Changes Over
@@ -51,6 +59,7 @@
           be found
           <a
             class="custom-link"
+            target="_blank"
             href="https://www1.ctdol.state.ct.us/lmi/cpi.asp"
             >here</a
           >
@@ -70,11 +79,11 @@
           visualizations <i>does not show the actual CPI-U value</i>, but
           instead <i>shows the change in CPI-U from the previous year</i>. If
           the CPI-U line appears negative, it means that the inflation rate
-          decreased compared to the year before — not necessarily that prices
-          dropped overall, but that the increase in prices slowed down. However,
-          if the CPI-U line drops below the x-axis, that indicates a negative
-          change in inflation (meaning actual deflation occurred during that
-          year).
+          decreased compared to the year before (not necessarily that prices
+          dropped overall, but that the increase in prices slowed down).
+          However, if the CPI-U line drops below the x-axis, that indicates a
+          negative change in inflation (meaning actual deflation occurred during
+          that year).
         </p>
         <p>
           The Property Type Insights section focuses on how different categories
@@ -101,6 +110,75 @@
           throughout the project are interactive, so feel free to hover over
           different points to see more information about them.
         </p>
+      </section>
+      <section class="viz-container">
+        <h3>Sale Prices Over Time vs. CPI (Scatter Plot)</h3>
+        <div class="viz-description">
+          As we begin to explore all of the real estate data through my
+          visualizations, the first thing I wanted to explore was where in
+          Connecticut the most number of sales were happening. The map below
+          shows the towns in Connecticut with sales (broken up by zip code)
+          shaded in a blue color to represent the number of sales. A light shade
+          of blue indicates a low number of sales, while a darker shade of blue
+          indicates a higher number of sales. The map is interactive, so feel
+          free to hover over different towns to see how many sales occurred in
+          that area. You can also adjust the date range at the top of the
+          visualization to see how the number of sales has changed over
+          different time periods.
+        </div>
+        <div class="container-box">
+          <div
+            class="tableauPlaceholder"
+            id="viz1744841872878"
+            style="position: relative"
+          >
+            <noscript
+              ><a href="#"
+                ><img
+                  alt="Number of Sales by TownEach town is broken up into multiple zip codes "
+                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BS&#47;BSJBQ8KGB&#47;1_rss.png"
+                  style="border: none" /></a></noscript
+            ><object class="tableauViz" style="display: none">
+              <param
+                name="host_url"
+                value="https%3A%2F%2Fpublic.tableau.com%2F"
+              />
+              <param name="embed_code_version" value="3" />
+              <param name="path" value="shared&#47;BSJBQ8KGB" />
+              <param name="toolbar" value="yes" />
+              <param
+                name="static_image"
+                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BS&#47;BSJBQ8KGB&#47;1.png"
+              />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+              <param name="filter" value="publish=yes" />
+            </object>
+          </div>
+          <script type="text/javascript">
+            var divElement = document.getElementById("viz1744841872878");
+            var vizElement = divElement.getElementsByTagName("object")[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+            var scriptElement = document.createElement("script");
+            scriptElement.src =
+              "https://public.tableau.com/javascripts/api/viz_v1.js";
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+        </div>
+        <div class="section-intro">
+          The towns with the highest number of sales include Bridgeport,
+          Stamford, and Waterbury. Towns with the fewest sales include Canaan,
+          Norfolk, and Colebrook. From the map, we can see that most sales are
+          concentrated in the southwestern and central parts of the state, while
+          the northwestern region has significantly fewer. This is likely due to
+          the southwestern area's higher population density, greater
+          urbanization, and proximity to major cities like New York City.
+        </div>
       </section>
     </main>
   </body>

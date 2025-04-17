@@ -6,6 +6,14 @@
   --hover: #1a3d2b;
   --header-bg: #e0ebe4;
   --bg: #d8e0da;
+  --text-color: #2c2c2c;
+  --section-bg: #f1f7f4;
+  --light-bg: #f9fbfa;
+  --border-color: #d8e0da;
+  --box-outline: #a1b1a6;
+  --subtext-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --divider-color: #ccc;
 }
 
 body {
@@ -26,16 +34,17 @@ body {
   font-size: 32px;
   margin: 0;
   color: var(--primary-color);
+  margin-top: 10px;
 }
 
 .subtitle {
   font-size: 19px;
-  color: #333;
+  color: var(--subtext-color);
   margin-top: 10px;
 }
 
 nav {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow-color);
   padding: 5px 40px;
   background-color: var(--bg);
 }
@@ -70,16 +79,16 @@ nav a.active {
 }
 
 .project-overview {
-  max-width: 70%;
+  max-width: 80%;
   margin: 50px auto;
   padding: 0 25px;
   line-height: 1.5;
   font-size: 17px;
-  color: #2c2c2c;
-  background-color: #f9fbfa;
-  border: 2px solid #d8e0da;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  border: 2px solid var(--border-color);
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px var(--shadow-color);
 }
 
 .project-overview h2 {
@@ -87,7 +96,7 @@ nav a.active {
   font-size: 29px;
   margin-bottom: 25px;
   color: var(--primary-color);
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--divider-color);
   padding-bottom: 8px;
 }
 
@@ -104,4 +113,75 @@ nav a.active {
 
 .custom-link:hover {
   color: var(--hover);
+}
+
+/* Property Type Page */
+
+.section-intro {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: var(--section-bg);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.section-intro h2 {
+  font-size: 25px;
+  margin-bottom: 17px;
+  color: var(--primary-color);
+}
+
+.section-intro p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 17px;
+  color: var(--subtext-color);
+}
+
+.viz-container {
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 0 25px;
+}
+
+.container-box {
+  background-color: var(--header-bg);
+  border: 2px dashed var(--box-outline);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 30px auto;
+  width: 80%;
+  overflow-x: auto;
+}
+
+.viz-description {
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 25px;
+  font-size: 17px;
+  color: var(--subtext-color);
+  line-height: 1.5;
+}
+
+hr {
+  width: 70%;
+}
+
+#name {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  #name {
+    font-size: 14px;
+    top: 2px;
+    margin-bottom: 20px;
+  }
 }

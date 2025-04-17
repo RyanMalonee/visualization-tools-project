@@ -5,6 +5,7 @@
     <title>Visualization Tools Project</title>
   </head>
   <body>
+    <h2 id="name">Ryan Malone</h2>
     <header class="main-header">
       <h1>Connecticut Real Estate Visualization</h1>
       <p class="subtitle">
@@ -18,5 +19,180 @@
         </ul>
       </nav>
     </header>
+    <main class="page-content">
+      <section class="section-intro">
+        <h2>Understanding Property Type Trends</h2>
+        <p>
+          This section explores how different categories of real estate have
+          performed across Connecticut. From single-family homes to condos and
+          commercial properties, we look at both how often they are sold and how
+          their prices vary.
+        </p>
+        <p>
+          Once visualizations are added, you'll be able to interact with the
+          data to see which property types are most active in the market, and
+          how sale prices are distributed within each group.
+        </p>
+      </section>
+      <section class="viz-container">
+        <h3>Sales Volume by Property Type</h3>
+        <div class="viz-description">
+          This bar chart shows the number of sales for each property type. Users
+          can filter by the dates of the sales to see how the number of sales
+          has changed over time. This helps highlight which types of properties
+          are most popular, consistently in demand, and which may have
+          experienced growth or decline in popularity over the years.
+          <br />
+          <i
+            >*Please note that many home sale records did not have a record of
+            the property type - those have been filtered out in an effort to
+            only report accurate information.*</i
+          >
+        </div>
+        <div class="container-box">
+          <div
+            class="tableauPlaceholder"
+            id="viz1744770610569"
+            style="position: relative"
+          >
+            <noscript
+              ><a href="#"
+                ><img
+                  alt="Number of Sales by Known Property Types*Many sales did not have a record of the property type, which have been filtered out. All values shown are based on data that did record that information* "
+                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofSalesbyKnownPropertyTypes&#47;NumberofSalesbyPropertyType&#47;1_rss.png"
+                  style="border: none" /></a></noscript
+            ><object class="tableauViz" style="display: none">
+              <param
+                name="host_url"
+                value="https%3A%2F%2Fpublic.tableau.com%2F"
+              />
+              <param name="embed_code_version" value="3" />
+              <param name="site_root" value="" />
+              <param
+                name="name"
+                value="NumberofSalesbyKnownPropertyTypes&#47;NumberofSalesbyPropertyType"
+              />
+              <param name="tabs" value="no" />
+              <param name="toolbar" value="yes" />
+              <param
+                name="static_image"
+                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofSalesbyKnownPropertyTypes&#47;NumberofSalesbyPropertyType&#47;1.png"
+              />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+              <param name="filter" value="publish=yes" />
+            </object>
+          </div>
+          <script type="text/javascript">
+            var divElement = document.getElementById("viz1744770610569");
+            var vizElement = divElement.getElementsByTagName("object")[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+            var scriptElement = document.createElement("script");
+            scriptElement.src =
+              "https://public.tableau.com/javascripts/api/viz_v1.js";
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+        </div>
+        <div class="section-intro">
+          Looking at the visualization above, we can see that the most commonly
+          sold property type, across all years available (4/5/1999 - 8/31/2023),
+          is Single Family homes, with a total of 401,612 sales. This is
+          followed quickly by <i>other</i> residential properties.
+          Unsurprisingly, the second least common property type sold is
+          industrial real estate, with only 774 sales recorded. This makes sense
+          considering most individuals aren't in a position to purchase
+          industrial-grade properties, which are typically owned by businesses.
+          Their high median sale price, as seen in the
+          <a href="#viz-2" class="custom-link">next visualization</a>, also
+          contributes to their limited number of transactions. You'll also
+          notice "Public Utility" is the least common property type sold, with
+          only 10 sales recorded. This is likely due to the fact that public
+          utilities are typically owned/managed by the government, or there are
+          limited public utility properties available for sale across the state.
+        </div>
+      </section>
+      <hr />
+      <section class="viz-container" id="viz-2">
+        <h3>Sale Price Distribution by Property Type (Box Plot)</h3>
+        <div class="viz-description">
+          This box-and-whisker plot highlights the distribution of sale prices
+          across the different property types. The box plots will show the
+          median, quartiles, and outliers for each category, helping users
+          understand the typical price ranges and variability in pricing for
+          each type of real estate. Users will be able to filter by the dates of
+          the sales to see how the median sale prices and distributions have
+          changed over time. The max sales price filter can be adjusted to
+          include higher or lower sales and exclude more or less outliers,
+          allowing users to see how the distribution of sale prices changes when
+          outliers are included or excluded (a higher maximum sales price will
+          include more outliers).
+        </div>
+        <div class="container-box">
+          <div
+            class="tableauPlaceholder"
+            id="viz1744831435849"
+            style="position: relative"
+          >
+            <noscript
+              ><a href="#"
+                ><img
+                  alt="Sale Price Distribution by Property TypeThe Max Sales Price filter can be adjusted to include higher&#47;lower sales and exclude more&#47;less outliers "
+                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SalePriceDistributionbyPropertyType&#47;SalePriceDistributionPropertyType&#47;1_rss.png"
+                  style="border: none" /></a></noscript
+            ><object class="tableauViz" style="display: none">
+              <param
+                name="host_url"
+                value="https%3A%2F%2Fpublic.tableau.com%2F"
+              />
+              <param name="embed_code_version" value="3" />
+              <param name="site_root" value="" />
+              <param
+                name="name"
+                value="SalePriceDistributionbyPropertyType&#47;SalePriceDistributionPropertyType"
+              />
+              <param name="tabs" value="no" />
+              <param name="toolbar" value="yes" />
+              <param
+                name="static_image"
+                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SalePriceDistributionbyPropertyType&#47;SalePriceDistributionPropertyType&#47;1.png"
+              />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+              <param name="filter" value="publish=yes" />
+            </object>
+          </div>
+          <script type="text/javascript">
+            var divElement = document.getElementById("viz1744831435849");
+            var vizElement = divElement.getElementsByTagName("object")[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+            var scriptElement = document.createElement("script");
+            scriptElement.src =
+              "https://public.tableau.com/javascripts/api/viz_v1.js";
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+        </div>
+        <div class="section-intro">
+          Looking at the visualization above, we can see that the median sale
+          price for Single Family homes is higher than that of Two and Three
+          Family homes. This may not be surprising, as single-family homes often
+          come with more land and privacy, which can drive up their value (more
+          people want to purchase them). However, something interesting depicted
+          by the box-and-whisker plots is the broad category of "Residential"
+          property types has a much higher median price than Single Family, Two
+          Family, and Three Family homes, suggesting that the "Residential"
+          category may include high-value property types beyond standard homes.
+        </div>
+      </section>
+    </main>
   </body>
 </html>
