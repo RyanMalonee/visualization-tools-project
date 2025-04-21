@@ -11,7 +11,7 @@
   --light-bg: #f9fbfa;
   --border-color: #d8e0da;
   --box-outline: #a1b1a6;
-  --subtext-color: #333;
+  --body-text-color: #333;
   --shadow-color: rgba(0, 0, 0, 0.05);
   --divider-color: #ccc;
 }
@@ -39,7 +39,7 @@ body {
 
 .subtitle {
   font-size: 19px;
-  color: var(--subtext-color);
+  color: var(--body-text-color);
   margin-top: 10px;
 }
 
@@ -142,7 +142,7 @@ nav a.active {
   font-size: 17px;
   line-height: 1.5;
   margin-bottom: 17px;
-  color: var(--subtext-color);
+  color: var(--body-text-color);
 }
 
 .viz-container {
@@ -166,7 +166,7 @@ nav a.active {
   margin: 10px auto;
   padding: 0 25px;
   font-size: 17px;
-  color: var(--subtext-color);
+  color: var(--body-text-color);
   line-height: 1.5;
 }
 
@@ -185,7 +185,7 @@ hr {
 
 .citation-format {
   font-size: 13px;
-  color: var(--subtext-color);
+  color: var(--body-text-color);
   margin-top: 4px;
   font-style: italic;
   margin-bottom: 7px;
