@@ -16,6 +16,8 @@
           <li><a href="index.html">Project Overview</a></li>
           <li><a href="#" class="active"> Market Changes Over Time</a></li>
           <li><a href="property-type.html">Property Type Insights</a></li>
+          <li><a href="resources.html">External Resources</a></li>
+          <li><a href="writeup.html">Written Report</a></li>
         </ul>
       </nav>
     </header>
@@ -26,9 +28,10 @@
         <p>
           This section focuses on how real estate prices across Connecticut have
           changed year by year, and how those trends relate to broader economic
-          indicators like inflation. By comparing housing data with the Consumer
-          Price Index (CPI-U), we can observe patterns in how quickly home
-          prices have risen or slowed down over time.
+          indicators like inflation. By comparing housing data with
+          Year-Over-Year changes in the Consumer Price Index (CPI-U), we can
+          observe patterns in how quickly home prices have risen or slowed down
+          over time.
         </p>
         <p>
           These visualizations are designed to highlight major shifts in the
@@ -98,36 +101,51 @@
           </script>
         </div>
         <div class="section-intro">
-          Looking at the visualization above, we can see that the most commonly
-          sold property type, across all years available (4/5/1999 - 8/31/2023),
-          is Single Family homes, with a total of 401,612 sales. This is
-          followed quickly by <i>other</i> residential properties.
-          Unsurprisingly, the second least common property type sold is
-          industrial real estate, with only 774 sales recorded. This makes sense
-          considering most individuals aren't in a position to purchase
-          industrial-grade properties, which are typically owned by businesses.
-          Their high median sale price, as seen in the
-          <a href="#viz-2" class="custom-link">next visualization</a>, also
-          contributes to their limited number of transactions. You'll also
-          notice "Public Utility" is the least common property type sold, with
-          only 10 sales recorded. This is likely due to the fact that public
-          utilities are typically owned/managed by the government, or there are
-          limited public utility properties available for sale across the state.
+          After looking at the above visualization, we can see that the year
+          with the largest difference between median sale price and median
+          assessed value is 2023, with a gap of $162,460. This could be
+          explained by a number of factors, including elevated home prices
+          driven by limited housing supply in the aftermath of the COVID-19
+          pandemic. (See the
+          <a class="custom-link" href="resources.html#covid"
+            >External Resources</a
+          >
+          page to learn more about the pandemic's impact.)
+          <br />
+          <br />
+          2011 marks the year with the lowest difference between median sale
+          price and median assessed value, with a gap of only $30,846. This
+          could be explained by the fact that the housing market was still
+          recovering from the
+          <a href="resources.html#financial-crisis" class="custom-link">
+            financial crisis</a
+          >, which caused a significant drop in home prices and assessed values.
+          As a result, the median sale price and median assessed value were able
+          to become more closely aligned during this time.
         </div>
       </section>
       <section class="viz-container">
-        <h3>Yearly Change in Median Sale Prices (Line Graph)</h3>
+        <h3>Year-Over-Year Change in Median Sale Prices</h3>
         <div class="viz-description">
-          This bar chart shows the number of sales for each property type. Users
-          can filter by the dates of the sales to see how the number of sales
-          has changed over time. This helps highlight which types of properties
-          are most popular, consistently in demand, and which may have
-          experienced growth or decline in popularity over the years.
+          This line graph shows the Year-Over-Year change in median sale price
+          for each property type from 2006 to 2023. It also includes a line
+          (light grey) representing the Year-Over-Year change in the Consumer
+          Price Index for All Urban Consumers (CPI-U), helping highlight periods
+          of inflation and deflation. When the CPI-U line rises above zero, it
+          indicates increasing inflation compared to the previous year at the
+          same time; when it dips below, it signals deflation or slowed
+          inflation. By comparing these trends side-by-side, users can observe
+          how different property types responded to broader economic conditions,
+          such as the 2008 financial crisis and the COVID-19 pandemic
+          (highlighted in light red). Hover over the visualization to view
+          tooltip information or alter the filters to get a better view of the
+          data.
+          <br />
           <br />
           <i
-            >*Please note that many home sale records did not have a record of
-            the property type - those have been filtered out in an effort to
-            only report accurate information.*</i
+            >*Note, not all property types are known, records of unknown
+            property type can be filtered out. All properties are displayed by
+            default*</i
           >
         </div>
         <div class="container-box">
@@ -180,49 +198,57 @@
           </script>
         </div>
         <div class="section-intro">
-          Looking at the visualization above, we can see that the most commonly
-          sold property type, across all years available (4/5/1999 - 8/31/2023),
-          is Single Family homes, with a total of 401,612 sales. This is
-          followed quickly by <i>other</i> residential properties.
-          Unsurprisingly, the second least common property type sold is
-          industrial real estate, with only 774 sales recorded. This makes sense
-          considering most individuals aren't in a position to purchase
-          industrial-grade properties, which are typically owned by businesses.
-          Their high median sale price, as seen in the
-          <a href="#viz-2" class="custom-link">next visualization</a>, also
-          contributes to their limited number of transactions. You'll also
-          notice "Public Utility" is the least common property type sold, with
-          only 10 sales recorded. This is likely due to the fact that public
-          utilities are typically owned/managed by the government, or there are
-          limited public utility properties available for sale across the state.
+          Looking at the visualization, we can see that during the
+          <a href="resources.html#financial-crisis" class="custom-link"
+            >2008-2009 financial crisis</a
+          >, the family homes (four family, three family, two family, and single
+          family homes) were some of the property types hit the hardest. Three
+          family homes had a -42.9% change in median sale prices compared to the
+          year prior. At this same period of time, CPI-U was down -0.338% from
+          the year prior. This indicates that the affects of the financial
+          crisis were felt in Connecticut when it occurred. When we filter the
+          data to only show those "family homes", we can see that, during
+          2008-2009, three family homes were hit the hardest, followed by four
+          family homes, and then two family homes. Single family homes were the
+          least affected, but still saw a -13% change in 2008, and a -8.81%
+          change in 2009.
         </div>
       </section>
       <section class="viz-container">
-        <h3>Sale Prices Over Time vs. CPI (Scatter Plot)</h3>
+        <h3>Sale Prices Over Time with CPI-U</h3>
         <div class="viz-description">
-          This bar chart shows the number of sales for each property type. Users
-          can filter by the dates of the sales to see how the number of sales
-          has changed over time. This helps highlight which types of properties
-          are most popular, consistently in demand, and which may have
-          experienced growth or decline in popularity over the years.
+          This scatter plot shows the total sale amounts recorded in Connecticut
+          from 1999 to 2023. Each green point represents a recorded property
+          sale, while the yellow line displays the Year-Over-Year % change in
+          the Consumer Price Index for All Urban Consumers (CPI-U). The CPI-U
+          line provides helpful context about periods of inflation and
+          deflation, allowing users to compare how the economy may align with
+          real estate activity over time. Users can interact with the filters on
+          the right-hand side to explore the data in more detail. The “Sale
+          Amount” filter can be used to remove outliers (such as extremely
+          high-value sales) which may visually compress the rest of the graph.
+          It’s also useful for viewing sales within a specific price range. The
+          “Town” filter allows users to narrow the data by a specific location
+          within Connecticut to observe trends in specific towns/areas.
+          <br />
           <br />
           <i
-            >*Please note that many home sale records did not have a record of
-            the property type - those have been filtered out in an effort to
-            only report accurate information.*</i
+            >*CPI-U data only goes back as far as August 2006, so anything
+            before that is shown as a 0% change. Data may be slow at loading due
+            to size*</i
           >
         </div>
         <div class="container-box">
           <div
             class="tableauPlaceholder"
-            id="viz1744841608687"
+            id="viz1745266465021"
             style="position: relative"
           >
             <noscript
               ><a href="#"
                 ><img
-                  alt="Sale Amounts Over Time*Property Type Filter is enabled by default due to size of dataset.* "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime2&#47;1_rss.png"
+                  alt="Sale Amounts Over Time* Property Type Filter is enabled by default due to size of dataset. * "
+                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime22&#47;1_rss.png"
                   style="border: none" /></a></noscript
             ><object class="tableauViz" style="display: none">
               <param
@@ -233,13 +259,13 @@
               <param name="site_root" value="" />
               <param
                 name="name"
-                value="SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime2"
+                value="SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime22"
               />
               <param name="tabs" value="no" />
               <param name="toolbar" value="yes" />
               <param
                 name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime2&#47;1.png"
+                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sa&#47;SaleAmountsOverTime-Scatter&#47;SaleAmountsOverTime22&#47;1.png"
               />
               <param name="animate_transition" value="yes" />
               <param name="display_static_image" value="yes" />
@@ -251,7 +277,7 @@
             </object>
           </div>
           <script type="text/javascript">
-            var divElement = document.getElementById("viz1744841608687");
+            var divElement = document.getElementById("viz1745266465021");
             var vizElement = divElement.getElementsByTagName("object")[0];
             vizElement.style.width = "100%";
             vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
@@ -262,21 +288,26 @@
           </script>
         </div>
         <div class="section-intro">
-          Looking at the visualization above, we can see that the most commonly
-          sold property type, across all years available (4/5/1999 - 8/31/2023),
-          is Single Family homes, with a total of 401,612 sales. This is
-          followed quickly by <i>other</i> residential properties.
-          Unsurprisingly, the second least common property type sold is
-          industrial real estate, with only 774 sales recorded. This makes sense
-          considering most individuals aren't in a position to purchase
-          industrial-grade properties, which are typically owned by businesses.
-          Their high median sale price, as seen in the
-          <a href="#viz-2" class="custom-link">next visualization</a>, also
-          contributes to their limited number of transactions. You'll also
-          notice "Public Utility" is the least common property type sold, with
-          only 10 sales recorded. This is likely due to the fact that public
-          utilities are typically owned/managed by the government, or there are
-          limited public utility properties available for sale across the state.
+          The visualization shows that the highest sale price recorded in
+          Connecticut occurred in August 2021, with a sale price of
+          $5,000,000,000 for apartments (serial number 20200091). In addition to
+          this, we can see that from July 2015 on, the CPI-U Year-Over-Year %
+          change has been above 0%, indicating inflation. The highest CPI-U
+          Year-Over-Year % change occurred in June 2022, with a 9.06% increase.
+          This is likely due to the economic recovery following the
+          <a class="custom-link" href="resources.html#covid"
+            >COVID-19 pandemic</a
+          >, when consumer demand surged, supply chains were still disrupted,
+          and inflation rose sharply across the country. If we filter the data
+          down to just family home sales (single family, two family, three
+          family, and four family properties), we see that the highest home
+          price was $120,000,000 in April 2014, but most of the prices were
+          under $20,000,000. When we continue to filter the data further, and
+          set a max sale price of $20,000,000, we can see that there are a lot
+          of sales in the $0 - $8,000,000 range, with fewer sales reaching as
+          high up as $20,000,000. This is to be expected, as the majority of
+          American's would not be able to afford a home in the $20,000,000
+          range.
         </div>
       </section>
     </main>
