@@ -192,6 +192,10 @@ hr {
   margin-left: 10px;
 }
 
+.pdf-box {
+  width: 70%;
+}
+
 @media (max-width: 768px) {
   #name {
     font-size: 14px;
